@@ -1,0 +1,27 @@
+@keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  /* Applying the spin animation to the pending icon */
+  .pending-icon {
+    display: inline-block;
+    animation: spin 1s linear infinite; /* 1s duration and infinite looping */
+    margin-right: 5px; /* Optional, to create space between the icon and text */
+  }
+
+  .bg-custom-deposit {
+    background-color:  #bdeac3;
+  }
+  .bg-custom-pending{
+    background-color: #e7d3e4;
+
+  }
+  .bg-custom-wrong-info{
+    background-color: #fc1b5f;
+  }
+  

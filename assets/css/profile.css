@@ -1,0 +1,40 @@
+.container {
+    padding-bottom: 300px;
+
+}
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    color: white;
+    height: 350px;
+}
+.card-img-top {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+.card-body {
+    background: linear-gradient(135deg, #12c2e9, #c471ed, #f64f59);
+    border-radius: 15px;
+    padding-top: 70px;
+}
+.btn-custom {
+    background: linear-gradient(135deg, #12c2e9, #c471ed, #f64f59);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 20px;
+    margin-top: 20px;
+    width: 50%;
+}
+.icon-placeholder {
+    font-size: 5rem;
+    color: white;
+}
+.joined{
+    margin-top: 52px;
+}

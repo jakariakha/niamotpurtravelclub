@@ -1,0 +1,105 @@
+.navbar {
+    background: linear-gradient(135deg, #12c2e9, #c471ed, #f64f59);
+    padding: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #ffffff !important;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.balance {
+    margin: 8px;
+    margin-top: 10px;
+    margin-right: 30px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #fbfbfb;
+}
+
+@media only screen and (min-width: 992px) {
+    .balance {
+        margin: 8px;
+        margin-left: 720px;
+        font-weight: 600;
+        font-size: 1.2rem;
+        color: #ffffff;
+    }
+}
+
+.nav-link {
+    color: #ffffff !important;
+    margin-right: 1rem;
+    font-size: 1.1rem;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #f7f7f7 !important;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #ffffff;
+    bottom: -5px;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.bi {
+    margin-right: 0.5rem;
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-toggler-icon {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* For the dropdown hover effect */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+.nav-item .dropdown-toggle::after {
+    display: none; /* Remove the default Bootstrap caret */
+}
+
+.dropdown-menu {
+    display: none; /* Initially hide the dropdown */
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.2); /* Transparent background or matching with navbar */
+    border: none;
+    padding: 0.5rem 0;
+    margin-top: 0;
+    box-shadow: none;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.dropdown-item {
+    padding: 0.5rem 1rem;
+    color: #ffffff;
+    background-color: transparent;
+}
+
+.dropdown-item:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Slight hover effect */
+    color: #ffffff !important;
+}
